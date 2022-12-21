@@ -2,7 +2,7 @@ name: push
 on: 
   push:
     branches:
-      - develop
+      - test_branch
       - main
 env:
   GO_VERSION: 1.17.13
