@@ -26,17 +26,17 @@ type Grades struct {
 	// Average func(Math, Science, Chinese) int
 }
 
-func TestAnonymousFuncInStruct(t *testing.T) {
-	grades := &Grades{
-		Math:    100,
-		Science: 200,
-		Chinese: 300,
-		Total: func(...int) int {
-			return Math + Science + Chinese
-		},
-	}
-	t.Log(grades.Total)
-}
+// func TestAnonymousFuncInStruct(t *testing.T) {
+// 	grades := &Grades{
+// 		Math:    100,
+// 		Science: 200,
+// 		Chinese: 300,
+// 		Total: func(...int) int {
+// 			return Math + Science + Chinese
+// 		},
+// 	}
+// 	t.Log(grades.Total)
+// }
 
 // func (g *Grades) Total() int {
 // 	return g.Science + g.Chinese + g.Math
